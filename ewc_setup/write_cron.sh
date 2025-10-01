@@ -18,8 +18,8 @@ log_file_deletion="$base_dir/deleted.txt"
 
 # Write the cron jobs to a temporary file
 #echo "$cron_schedule_script $script_path >> $log_file 2>&1" > mycron
-echo "$cron_schedule_restart $restart_command" >> mycron
-echo "$cron_deletion_schedule $cron_deletion_raw >> $log_file_deletion 2>&1" > mycron
+echo "$cron_schedule_restart $restart_command" > mycron
+echo "$cron_deletion_schedule $cron_deletion_raw >> $log_file_deletion 2>&1" >> mycron
 
 # Install the new cron jobs from the temporary file -> needs to be root for restart !
 # sudo crontab mycron
