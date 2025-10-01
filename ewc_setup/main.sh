@@ -16,6 +16,6 @@ $path_scripts/update_python.sh
 $path_scripts/install_dl_toolbox.sh
 $path_scripts/install_s3.sh
 # $path_scripts/s3_create_buckets.sh eprofile-dl-raw eprofile-dl-l1  # comment this out if buckets alredy exist
-$path_scripts/s3_automount_buckets.sh eprofile-dl-raw eprofile-dl-l1
+$path_scripts/s3_automount_buckets.sh eprofile-dl-l1
 $path_scripts/import_eprofile_config.sh
 $path_scripts/write_cron.sh
